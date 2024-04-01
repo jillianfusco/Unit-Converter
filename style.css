@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background: #F4F4F4;
+}
+
+#purple-container {
+    background: #6943FF;
+    text-align: center; 
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    font-family: inter;
+    font-weight: extrabold;
+    font-size: 28px;
+    margin-bottom: 20px; 
+}
+
+input[type="number"] {
+    width: 110px; 
+    height: 80px;
+    border: 2px solid #B295FF; 
+    border-radius: 4px; 
+    font-size: 58px; 
+    font-family: inter;
+    background-color: #6943FF;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.no-spinners {
+     -moz-appearance: textfield;
+  }
+  
+  .no-spinners::-webkit-outer-spin-button,
+  .no-spinners::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+  }
+
+button {
+    background: white;
+    width: 110px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    color: #3D3D3D;
+    font-family: inter;
+    font-weight: 600;
+    font-size: 16px;  
+}
+
+.box {
+    font-family: inter;
+    background: white;
+    height: 100px;
+    padding-bottom: 0;
+    justify-content: center;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    flex-direction: column; /* Stack text vertically */
+}
+
+.purple-text {
+    color: #5A537B;
+    font-weight: 600;
+    font-size: 20px;
+    justify-content: center;
+    margin-bottom: 10px; /* Add space between the two paragraphs */
+}
