@@ -1,6 +1,7 @@
 const inputNum = document.getElementById("input-number")
 const convertBtn = document.getElementById("convert-btn")
 const lengthUnit = document.getElementById("length")
+const lengthSmallUnit = document.getElementById("length-small")
 const volumeUnit = document.getElementById("volume")
 const massUnit = document.getElementById("mass")
 
@@ -19,6 +20,16 @@ function convert() {
     const feetToMetersResult = `${inputValue} feet = ${feetToMeters} meters`;
     // Update the result elements
     lengthUnit.textContent = `${metersToFeetResult} | ${feetToMetersResult}`
+
+    // Convert milimeteres to inches
+    const millimeteresToInches = (inputValue *  0.0393701).toFixed(3);
+    const millimeteresToInchesResult = `${inputValue} millimeters = ${millimeteresToInches} inches`;
+    // Convert feet to meters
+    const inchesToMillimeters = (inputValue * 25.4).toFixed(3);
+    const inchesToMillimetersResult = `${inputValue} inches = ${inchesToMillimeters} millimeters`;
+    // Update the result elements
+    lengthSmallUnit.textContent = `${millimeteresToInchesResult} | ${inchesToMillimetersResult}`
+
 
     // Convert liters to gallons
     const litersToGallons = (inputValue * 0.264172).toFixed(3);
