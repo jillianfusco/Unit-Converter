@@ -43,6 +43,10 @@ input[type="number"] {
      margin: 0;
   }
 
+  input[type="number"]::placeholder {
+    font-size: 12px; /* Set the font size of the placeholder text */
+    color: #B295FF;
+  }
 button {
     background: white;
     width: 110px;
